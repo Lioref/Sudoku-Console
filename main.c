@@ -20,7 +20,7 @@ int main() {
     }
     legalComs = createLegalComMatrix();
     argVec = createArgVector();
-    m = 3;
+    m = 3; /* Set default values */
     n = 3;
     emptyCells = ((m*n)*(m*n));
     mode = 0;
