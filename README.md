@@ -6,11 +6,9 @@ Thus, a Gurobi license is needed to download the gurobi library from the [Gurobi
 The project was the final coding assignment for a university course in C language.
 
 ## THE GAME has 3 modes:
-Init: The default mode when running the game. Only "Solve" and "Edit" command are available from this mode.<br/>
-Edit<br/>
-Solve<br/>
-
-Edit and Solve modes are both "game playing" modes, meaning a user has a board to play with in each mode.<br/>
+1. Init: The default mode when running the game. Only "Solve" and "Edit" command are available from this mode.<br/>
+2. Edit: A "game playing" mode. Should be used by the user to generate new puzzles, or to experiment with existing puzzles<br/>
+3. Solve: A "game playing" mode where a user can solve generated puzzles loaded from files<br/>
 
 ## The user commands that can be used to play are: 
 1.  Solve X - Loads a puzzle from a file with path X in solve mode
@@ -32,9 +30,11 @@ Edit and Solve modes are both "game playing" modes, meaning a user has a board t
 ## GAME FILE FORMATS
 The sudoku board can be saved in a txt file, with the first line consisting of the rows (m) and columns (n) variables, separated by a space.<br/>
 Then, the board is saved with the numbers separated by a space:<br/>
+
 	Empty cells are saved as 0<br/>
-	Fixed cells are saved with *<br/>
+	Fixed cells are saved with .<br/>
 for example:<br/>
+
 3 2<br/>
 0 1 0 0 0 0<br/>
 0 0 0 0 0 0<br/>
