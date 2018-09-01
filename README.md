@@ -28,19 +28,19 @@ Solve<br/>
 15. Exit - Exit the game
 
 ## GAME FILE FORMATS
-The sudoku board can be saved in a txt file, with the first line consisting of the rows (m) and columns (n) variables, separated by a space. 
-then, the board is saved with the numbers separated by a space:
-	Empty cells are saved as 0
-	Fixed cells are saved with *
-for example:
-3 2
-0 1 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 0 0
-0 0 0 0 *6 0
-0 0 0 0 0 0
-Represents a board where m=3, n=2, meaning each block is 3 rows * 2 columns. 
+The sudoku board can be saved in a txt file, with the first line consisting of the rows (m) and columns (n) variables, separated by a space.<br/>
+Then, the board is saved with the numbers separated by a space:<br/>
+	Empty cells are saved as 0<br/>
+	Fixed cells are saved with *<br/>
+for example:<br/>
+3 2<br/>
+0 1 0 0 0 0<br/>
+0 0 0 0 0 0<br/>
+0 0 0 0 0 0<br/>
+0 0 0 0 0 0<br/>
+0 0 0 0 *6 0<br/>
+0 0 0 0 0 0<br/>
+Represents a board where m=3, n=2, meaning each block is 3 rows * 2 columns.<br/>
 Almost all cells are empty except for cell <2,1> which has the value 1, and cell <5,5> which has the fixed value 6.
 
 ## REMARKS
