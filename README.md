@@ -31,8 +31,8 @@ The project was the final coding assignment for a university course in C languag
 The sudoku board can be saved in a txt file, with the first line consisting of the rows (m) and columns (n) variables, separated by a space.<br/>
 Then, the board is saved with the numbers separated by a space:<br/>
 
-	Empty cells are saved as 0<br/>
-	Fixed cells are saved with .<br/>
+	Empty cells are saved as 0
+	Fixed cells are saved with . before the cell value
 for example:<br/>
 
 3 2<br/>
