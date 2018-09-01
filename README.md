@@ -49,4 +49,4 @@ Almost all cells are empty except for cell <2,1> which has the value 1, and cell
 1. When referring to cell X Y on the game board: X is the columns argument and Y is the rows argument (like a coordinates system)
 2. If a new solve/edit command is issued before saving, all changes will be lost
 3. A sudoku board that is not of default size 9*9 can be created only by loading from a txt file in the format specified above
-4. Not all user command are available in each mode. For example: The mark_errors command is only considered a valid command if the user is in "solve" mode.
+4. Not all user commands are available in each mode. For example: The mark_errors command is only considered a valid command if the user is in "solve" mode.
