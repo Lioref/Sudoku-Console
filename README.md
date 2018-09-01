@@ -6,9 +6,9 @@ Thus, a Gurobi license is needed to download the gurobi library from the [Gurobi
 The project was the final coding assignment for a university course in C language.
 
 ## THE GAME has 3 modes:
-Init. 
-Edit. 
-Solve. 
+Init<br/>
+Edit<br/>
+Solve<br/>
 
 ## The user commands that can be used to play are: 
 1.  Solve X - Loads a puzzle from a file with path X in solve mode
