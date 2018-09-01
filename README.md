@@ -6,15 +6,17 @@ Thus, a Gurobi license is needed to download the gurobi library from the [Gurobi
 The project was the final coding assignment for a university course in C language.
 
 ## THE GAME has 3 modes:
-Init<br/>
+Init: The default mode when running the game. Only "Solve" and "Edit" command are available from this mode.<br/>
 Edit<br/>
 Solve<br/>
+
+Edit and Solve modes are both "game playing" modes, meaning a user has a board to play with in each mode.<br/>
 
 ## The user commands that can be used to play are: 
 1.  Solve X - Loads a puzzle from a file with path X in solve mode
 2.  Edit X - Loads a puzzle from a file with path X in edit mode, if entered with no parameters, generates an 9*9 empty game board
 3.  Mark_errors X - Gets a 0/1 as parameter, if 1: marks errors when printing board with *, else, doesn't mark the errors when printing
-4.  Print_board - Prints the Sudoku board
+4.  Print_board - Prints the Sudoku board. If mark errors is set to 1, erroneous values on the board will be printed with *.
 5.  Set X Y Z - Sets cell X Y on the board to the value Z
 6.  validate - Checks that board is solvable using the Gurobi solver
 7.  generate X Y - Generates a puzzle on an empty Sudoku board, leaving Y hints on the board
@@ -38,12 +40,13 @@ for example:<br/>
 0 0 0 0 0 0<br/>
 0 0 0 0 0 0<br/>
 0 0 0 0 0 0<br/>
-0 0 0 0 *6 0<br/>
+0 0 0 0 .6 0<br/>
 0 0 0 0 0 0<br/>
 Represents a board where m=3, n=2, meaning each block is 3 rows * 2 columns.<br/>
 Almost all cells are empty except for cell <2,1> which has the value 1, and cell <5,5> which has the fixed value 6.
 
 ## REMARKS
-1. When referring to cell X Y on the game board - X is the columns argument and Y is the rows argument (like a coordinates system)
+1. When referring to cell X Y on the game board: X is the columns argument and Y is the rows argument (like a coordinates system)
 2. If a new solve/edit command is issued before saving, all changes will be lost
 3. A sudoku board that is not of default size 9*9 can be created only by loading from a txt file in the format specified above
+4. Not all user command are available in each mode. For example: The mark_errors command is only considered a valid command if the user is in "solve" mode.
